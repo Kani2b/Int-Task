@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        // Define environment variables if needed
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -23,7 +19,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Push to Docker Hub') {
             steps {
                 // Push the Docker image to Docker Hub
@@ -47,4 +43,5 @@ pipeline {
         }
     }
 }
+
 

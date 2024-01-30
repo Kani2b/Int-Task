@@ -23,13 +23,7 @@ pipeline {
                 }
             }
         }
-
-        stage('Test') {
-            steps {
-                // You can add test steps here if needed
-            }
-        }
-
+        
         stage('Push to Docker Hub') {
             steps {
                 // Push the Docker image to Docker Hub
